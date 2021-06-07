@@ -1,0 +1,27 @@
+{
+  "name": "mountebank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mb --configfile imposters.ejs --nologfile --allowInjection",
+    "restart": "mb restart --configfile imposters.ejs --nologfile --allowInjection",
+    "lint": "node lint.js",
+    "debug": "mb --configfile imposters.ejs --nologfile --loglevel debug",
+    "watch": "npm run start && watch 'npm run restart' ./stubs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/osv77ldo/mountebank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/osv77ldo/mountebank/issues"
+  },
+  "homepage": "https://gitlab.com/osv77ldo/mountebank#readme",
+  "dependencies": {
+    "mountebank": "^2.4.0"
+  }
+}

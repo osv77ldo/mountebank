@@ -1,0 +1,11 @@
+# Node
+node_modules
+npm-debug.log
+yarn.lock
+.DS_Store
+
+mb.log
+mb.pid
+mb1.log
+.idea/
+.vscode/

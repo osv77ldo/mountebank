@@ -1,0 +1,25 @@
+{
+    "imposters": [
+        {
+            "port": 8080,
+            "protocol": "http",
+            "defaultResponse": {
+                "statusCode": 404,
+                "body": {
+                    "errors": [
+                        {
+                            "code": "NOT_FOUND",
+                            "message": "The requested method are not configured in mountebank"
+                        }
+                    ]
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            },
+            "stubs": [
+
+            ]
+        }
+    ]
+}
