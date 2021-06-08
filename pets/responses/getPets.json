@@ -1,0 +1,42 @@
+{
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": [{
+    "id": 0,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "doggie",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 1,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "matt",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  }]
+}
