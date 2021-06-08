@@ -1,0 +1,31 @@
+{
+    "predicates": [
+     {
+      "and": [
+       {
+        "not": {
+         "or": [
+          {"equals": {"method": "POST", "path": "/protectedPath"}}
+         ]
+        } 
+       },
+       { 
+        "exists": { "headers": {"Authorization": false} }
+       }
+      ]
+     }
+    ],
+    "responses": [
+     {
+      "is":
+       {
+        "statusCode": 401,
+        "headers": { "Content-Type": "application/json"},
+        "body":
+         {
+          "desc": "UnAuthorized"
+         }
+       }
+      }
+     ]
+   }
